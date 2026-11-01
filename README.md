@@ -133,5 +133,5 @@ test/
   fixtures.ts            synthetic frames built from the MPEG header rules
 ```
 
-The employer-provided MP3 is intentionally ignored by Git. Place it under `samples/` if you want
+Provided MP3 is intentionally ignored by Git. Place it under `samples/` if you want
 to repeat the local acceptance test.
