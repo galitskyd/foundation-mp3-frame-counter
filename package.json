@@ -1,0 +1,40 @@
+{
+  "name": "foundation-mp3-frame-counter",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A streaming TypeScript API that counts MPEG-1 Layer III frames without an MP3 parsing package.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "node dist/server.js",
+    "build": "tsc -p tsconfig.build.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src test",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check": "npm run format:check && npm run lint && npm test && npm run build"
+  },
+  "dependencies": {
+    "@fastify/multipart": "^9.2.1",
+    "fastify": "^5.6.1"
+  },
+  "overrides": {
+    "minimatch": "^11.0.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^24.10.0",
+    "@vitest/coverage-v8": "^5.0.5",
+    "eslint": "^10.14.0",
+    "prettier": "^3.6.2",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.72.1",
+    "vitest": "^5.0.5"
+  }
+}

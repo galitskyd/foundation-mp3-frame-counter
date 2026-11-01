@@ -1,0 +1,10 @@
+node_modules/
+dist/
+coverage/
+.env
+*.log
+
+# The employer-provided sample is used for local acceptance testing only.
+samples/*.mp3
+!samples/.gitkeep
+
